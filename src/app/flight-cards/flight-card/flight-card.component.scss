@@ -1,0 +1,53 @@
+.flight-card-container {
+  display: flex;
+  margin: 16px;
+  padding: 8px 0;
+  border: 1px dotted black;
+  .airline-logo-container {
+    .airline-logo {
+      width: 80px;
+    }
+  }
+  .flight-data {
+    flex: 3;
+    padding: 0 16px;
+    .flight-segment-data {
+      display: flex;
+      margin-top: 16px;
+      .segment-line {
+        width: 25%;
+        height: 1px;
+        background-color: black;
+        border: none;
+      }
+    }
+  }
+  .flight-duration {
+    .duration {
+      margin-top: 24px;
+    }
+    flex: 1;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+  }
+  .flight-price {
+    flex: 1;
+    padding-right: 16px;
+    text-align: right;
+    position: relative;
+    .view-btn {
+      color: red;
+      position: absolute;
+      right: 16px;
+      bottom: 8px;
+      border-radius: 4px;
+      border-color: red;
+      width: 100px;
+      height: 32px;
+    }
+  }
+  .grey {
+    color: grey;
+  }
+}

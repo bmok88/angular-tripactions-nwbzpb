@@ -1,0 +1,11 @@
+<div class="flight-cards-container">
+  <div 
+    *ngFor="let flight of flights"
+    class="flight-card-container">
+      <app-flight-card
+        [flight]="flight"
+        >
+      </app-flight-card>
+  </div>
+</div>
+

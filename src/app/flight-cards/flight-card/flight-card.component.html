@@ -1,0 +1,37 @@
+<div class="flight-card-container">
+  <div class="airline-logo-container">
+	  <img class="airline-logo" src="{{ flight.logoUrl }}" alt="flight.airline">
+  </div>
+  <div class="flight-data">
+    <div class="airline">
+      <strong>{{ flight.airline }}</strong>
+    </div>
+    <div class="flight-segment-data">
+      <div class="departure segment">
+        <span class="time-date">{{ flight.departure }}</span>
+        <span class="grey airport-code">
+          {{ flight.departureAirportCode }}
+        </span>
+      </div>
+      <hr class="segment-line">
+      <div class="arrival segment">
+        <span class="time-date">{{ flight.arrival }}</span>
+        <span class="grey airport-code">
+          {{ flight.arrivalAirportCode }}
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="flight-duration">
+    <div class="duration grey">Duration</div>
+    <strong>{{ flight.duration }}</strong>
+  </div>
+  <div class="flight-price">
+    <div class="price">
+      <strong>${{ flight.price }}</strong>
+    </div>
+    <button class="view-btn">
+      View
+    </button>
+  </div>
+</div>
